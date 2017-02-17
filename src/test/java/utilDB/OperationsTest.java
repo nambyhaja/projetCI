@@ -55,18 +55,18 @@ public class OperationsTest {
     /**
      * Test of findUtilisateur method, of class Operations.
      */
-    /*
+    
     @Test
     public void testFindUtilisateur_String_String() throws Exception {
         System.out.println("findUtilisateur");
-        String email = "";
-        String motdepasse = "";
+        String email = "nambinintsoa.razafindrafito@gmail.com";
+        String motdepasse = "namby";    
         Utilisateur expResult = null;
         Utilisateur result = Operations.findUtilisateur(email, motdepasse);
-        assertEquals(expResult, result);
+        assertNotNull( result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }*/
+       //fail("The test case is a prototype.");
+    }
 
     /**
      * Test of insertUtilisateur method, of class Operations.
@@ -78,9 +78,9 @@ public class OperationsTest {
         Utilisateur utilisateur = null;
         int expResult = 0;
         int result = Operations.insertUtilisateur(utilisateur);
-        assertEquals(expResult, result);
+        assertNotNull(result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
 
     /**
@@ -91,9 +91,9 @@ public class OperationsTest {
         System.out.println("findAllMusique");
         Musique[] expResult = null;
         Musique[] result = Operations.findAllMusique();
-        assertArrayEquals(expResult, result);
+        assertNotNull(result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+       // fail("The test case is a prototype.");
     }
 
     /**
@@ -107,7 +107,7 @@ public class OperationsTest {
         Musique[] result = Operations.findMusique(idUtilisateur);
         assertArrayEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+     //   fail("The test case is a prototype.");
     }
 
     /**
@@ -118,9 +118,10 @@ public class OperationsTest {
         System.out.println("findMusiquesRecents");
         Musique[] expResult = null;
         Musique[] result = Operations.findMusiquesRecents();
-        assertArrayEquals(expResult, result);
+        //assertArrayEquals(expResult, result);
+        assertNotNull(result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+       // fail("The test case is a prototype.");
     }
 
     /**
@@ -131,9 +132,9 @@ public class OperationsTest {
         System.out.println("findMusiquesTopSemaine");
         Musique[] expResult = null;
         Musique[] result = Operations.findMusiquesTopSemaine();
-        assertArrayEquals(expResult, result);
+        assertNotNull(result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+       // fail("The test case is a prototype.");
     }
 
     /**
@@ -145,7 +146,7 @@ public class OperationsTest {
         Musique musique = null;
         Operations.insererMusique(musique);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
 
     /**
@@ -154,25 +155,13 @@ public class OperationsTest {
     @Test
     public void testFindCategorie_int() throws Exception {
         System.out.println("findCategorie");
-        int idMusique = 0;
+        int idMusique = 1;
         CategorieMusique expResult = null;
         CategorieMusique result = Operations.findCategorie(idMusique);
-        assertEquals(expResult, result);
+        assertNotNull(result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+       // fail("The test case is a prototype.");
     }
 
-    /**
-     * Test of findCategorie method, of class Operations.
-     */
-    @Test
-    public void testFindCategorie_0args() throws Exception {
-        System.out.println("findCategorie");
-        CategorieMusique[] expResult = null;
-        CategorieMusique[] result = Operations.findCategorie();
-        assertArrayEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
     
 }
