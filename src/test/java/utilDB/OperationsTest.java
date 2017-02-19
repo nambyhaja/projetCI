@@ -75,7 +75,7 @@ public class OperationsTest {
     @Test
     public void testInsertUtilisateur() throws Exception {
         System.out.println("insertUtilisateur");
-        Utilisateur utilisateur = null;
+        Utilisateur utilisateur = new Utilisateur("Rakotobe", "Jean-Pierre", "13-11-86","jean-pierre@gmail.com", "jeanpierre", "Je suis vieux mais j'adore la musique des jeunes");
         int expResult = 0;
         int result = Operations.insertUtilisateur(utilisateur);
         assertNotNull(result);
@@ -102,10 +102,13 @@ public class OperationsTest {
     @Test
     public void testFindMusique() throws Exception {
         System.out.println("findMusique");
-        int idUtilisateur = 0;
-        Musique[] expResult = null;
+        int idUtilisateur = 2;
+        int[] taillemusique = new int[1];
+        taillemusique[0]=10;
         Musique[] result = Operations.findMusique(idUtilisateur);
-        assertArrayEquals(expResult, result);
+        int[] tailleresult=new int[1];
+        tailleresult[0]=result.length;
+        assertArrayEquals(taillemusique, tailleresult);
         // TODO review the generated test code and remove the default call to fail.
      //   fail("The test case is a prototype.");
     }
@@ -143,7 +146,7 @@ public class OperationsTest {
     @Test
     public void testInsererMusique() throws Exception {
         System.out.println("insererMusique");
-        Musique musique = null;
+        Musique musique = new Musique(1, 1, "testtitre", "testartiste", "testimage", "testlien", true);
         Operations.insererMusique(musique);
         // TODO review the generated test code and remove the default call to fail.
         //fail("The test case is a prototype.");

@@ -1,20 +1,20 @@
-D:\Micha ITU\S5\Web\FreeZiks\JSP\freeziksMaven\src\main\java\servlet\Inscription.java
-D:\Micha ITU\S5\Web\FreeZiks\JSP\freeziksMaven\src\main\java\servlet\GetMusique.java
-D:\Micha ITU\S5\Web\FreeZiks\JSP\freeziksMaven\src\main\java\servlet\GetCategorieMusique.java
-D:\Micha ITU\S5\Web\FreeZiks\JSP\freeziksMaven\src\main\java\fonctions\Fonction.java
-D:\Micha ITU\S5\Web\FreeZiks\JSP\freeziksMaven\src\main\java\servlet\GetProfile.java
-D:\Micha ITU\S5\Web\FreeZiks\JSP\freeziksMaven\src\main\java\exception\UtilisateurException.java
-D:\Micha ITU\S5\Web\FreeZiks\JSP\freeziksMaven\src\main\java\utilDB\Operations.java
-D:\Micha ITU\S5\Web\FreeZiks\JSP\freeziksMaven\src\main\java\fonctions\FileUploadProgressListener.java
-D:\Micha ITU\S5\Web\FreeZiks\JSP\freeziksMaven\src\main\java\mapping\Musique.java
-D:\Micha ITU\S5\Web\FreeZiks\JSP\freeziksMaven\src\main\java\servlet\Connexion.java
-D:\Micha ITU\S5\Web\FreeZiks\JSP\freeziksMaven\src\main\java\fonctions\Upload.java
-D:\Micha ITU\S5\Web\FreeZiks\JSP\freeziksMaven\src\main\java\servlet\Deconnexion.java
-D:\Micha ITU\S5\Web\FreeZiks\JSP\freeziksMaven\src\main\java\servlet\GetTopMusique.java
-D:\Micha ITU\S5\Web\FreeZiks\JSP\freeziksMaven\src\main\java\mapping\CategorieMusique.java
-D:\Micha ITU\S5\Web\FreeZiks\JSP\freeziksMaven\src\main\java\servlet\GetMusiqueRecent.java
-D:\Micha ITU\S5\Web\FreeZiks\JSP\freeziksMaven\src\main\java\utilDB\UtilDB.java
-D:\Micha ITU\S5\Web\FreeZiks\JSP\freeziksMaven\src\main\java\mapping\Utilisateur.java
-D:\Micha ITU\S5\Web\FreeZiks\JSP\freeziksMaven\src\main\java\servlet\Uploader.java
-D:\Micha ITU\S5\Web\FreeZiks\JSP\freeziksMaven\src\main\java\fonctions\TEST.java
-D:\Micha ITU\S5\Web\FreeZiks\JSP\freeziksMaven\src\main\java\servlet\GetAllMusique.java
+C:\projetCI\src\main\java\mapping\CategorieMusique.java
+C:\projetCI\src\main\java\servlet\Connexion.java
+C:\projetCI\src\main\java\fonctions\TEST.java
+C:\projetCI\src\main\java\fonctions\FileUploadProgressListener.java
+C:\projetCI\src\main\java\servlet\Uploader.java
+C:\projetCI\src\main\java\exception\UtilisateurException.java
+C:\projetCI\src\main\java\servlet\GetCategorieMusique.java
+C:\projetCI\src\main\java\fonctions\Fonction.java
+C:\projetCI\src\main\java\servlet\GetAllMusique.java
+C:\projetCI\src\main\java\servlet\GetProfile.java
+C:\projetCI\src\main\java\utilDB\Operations.java
+C:\projetCI\src\main\java\mapping\Utilisateur.java
+C:\projetCI\src\main\java\servlet\GetTopMusique.java
+C:\projetCI\src\main\java\fonctions\Upload.java
+C:\projetCI\src\main\java\mapping\Musique.java
+C:\projetCI\src\main\java\servlet\GetMusique.java
+C:\projetCI\src\main\java\servlet\Inscription.java
+C:\projetCI\src\main\java\utilDB\UtilDB.java
+C:\projetCI\src\main\java\servlet\Deconnexion.java
+C:\projetCI\src\main\java\servlet\GetMusiqueRecent.java
