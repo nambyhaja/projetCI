@@ -166,5 +166,21 @@ public class OperationsTest {
        // fail("The test case is a prototype.");
     }
 
+    /**
+     * Test of findCategorie method, of class Operations.
+     */
+    @Test
+    public void testFindCategorie_0args() throws Exception {
+        System.out.println("findCategorie");
+        int[] taillecategorie = new int[1];
+        taillecategorie[0]=12;
+        CategorieMusique[] result = Operations.findCategorie();
+        int[] tailleresult=new int[1];
+        tailleresult[0]=result.length;
+        assertArrayEquals(taillecategorie, tailleresult);
+        // TODO review the generated test code and remove the default call to fail.
+        //fail("The test case is a prototype.");
+    }
+
     
 }
