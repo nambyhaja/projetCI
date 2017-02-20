@@ -6,6 +6,7 @@ import java.sql.Date;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
 import mapping.CategorieMusique;
 import mapping.Musique;
 import mapping.Utilisateur;
@@ -236,6 +237,57 @@ public class Operations
         }
         c.close();
         return categories;
+    }
+    public static int getRows(String nomtable) throws Exception
+    {
+        Connection c = UtilDB.getPostgresConnection();
+        String sql = "select * from "+nomtable;
+        
+        PreparedStatement prd = c.prepareStatement(sql,ResultSet.TYPE_SCROLL_INSENSITIVE,ResultSet.CONCUR_UPDATABLE);
+        
+        ResultSet rs = prd.executeQuery();
+        rs.last();
+        int taille = rs.getRow();
+         rs.beforeFirst();
+         c.close();
+        return taille;
+       
+    }
+    public static int getMaxId(String nomTable,String nomColonneId)throws Exception
+    {  
+        Connection c = UtilDB.getPostgresConnection();
+        int val=0;
+        String req = "SELECT max("+nomColonneId+") FROM "+nomTable;
+        Statement stmt = c.createStatement();
+        ResultSet res = stmt.executeQuery(req);
+        Integer i;
+        while(res.next())
+        {
+                i=Integer.parseInt(res.getString(1));
+                 val=i; 
+
+        }
+        c.close();
+        return val;
+    } 
+    public static void deleteUtilisateur(int id)throws Exception
+    {
+        Connection c = UtilDB.getPostgresConnection();
+        PreparedStatement preparar1=null;
+        try
+        {
+            String requete1="delete from utilisateur WHERE idutilisateur=?";
+            preparar1=c.prepareStatement(requete1);
+            preparar1.setLong(1,id);
+            preparar1.executeUpdate();
+
+        }
+        catch(Exception e)
+        {
+              throw new Exception("Vous ne pouvez pas supprimer cette cat&eacute;gorie car des chambres y sont li&eacute;es");
+        }
+        c.close();
+            
     }
     
 }
